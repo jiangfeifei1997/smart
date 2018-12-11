@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>锤子呦</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/tool.js"></script>
+		<script src="js/startMove.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src ='js/parabola.js'></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+	<div class="ball"></div>
+		<header>
+			<div class="nav-top">
+				<div class="logo"><a href="#"></a></div>
+				<div class=" container">
+					<ul class="nav-list">
+						<li><a class="active" href="">在线商城</a></li>
+						<li><a href="">坚果 Pro 2S</a></li>
+						<li><a href="">坚果 R1</a></li>
+						<li><a href="">坚果 TNT 工作站</a></li>
+						<li><a href="">Smartisan OS</a></li>
+						<li><a href="">欢喜云</a></li>
+						<li><a href="">应用</a></li>
+						<li><a href="">论坛</a></li>
+						<li><a href="">荣誉与奖项</a></li>
+					</ul>
+					<ul class="nav-aside">	
+						<li class="nav-user">
+							
+							
+						</li>
+						<li class="nav-cart">
+							<a href="#"></a>
+							<div class="nav-cart-wrapper">
+								<div class="nav-cart-list">
+									
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-desktop cn header-sub-shop">
+				<div class="nav-sub ">
+					<div  class="nav-sub-bg"></div>
+					<div id="nav-sub-wrapper" class="nav-sub-wrapper">
+						<div class="container">
+							<ul  class="nav-list"> 
+								<li class="active"><a href="#">首页</a></li>
+								<li><a href="#">手机</a></li>
+								<li><a href="#">“足迹”系列</a></li>
+								<li><a href="#">官方配件</a></li>
+								<li><a href="#">畅呼吸系列</a></li>
+								<li><a href="#">箱包类</a></li>
+								<li><a href="#">品牌周边</a></li>
+								<li><a href="#">智能音箱</a></li>
+								<li><a href="#">服务</a></li> 
+								<li><a>企业团购</a></li>
+							</ul>
+							<div id="nav-search" class="nav-search" >
+								<div class="search-bar"> 
+									<form action="" class="search-form ng-untouched ng-pristine ng-valid" novalidate=""> 
+										<input autocapitalize="off" autocomplete="off" autocorrect="off" class="search-box ng-untouched ng-pristine ng-invalid" id="js_searchText" maxlength="30" name="searchText" spellcheck="false" type="text" placeholder=""> 
+										<button class="search-btn" type="submit"></button> 
+										<div class="search-recommend-words" id="words"> 
+											<a href="#">坚果 3 低至 899 元</a>
+											<a href="#">加湿器</a> 
+										</div> 
+									</form> 
+									<div class="keywords-list" id="keywords-list"> 
+										<div class="arrow-up"> <span></span> </div> 
+										<ul class="result-list">
+										<li> <span>坚果 Pro 2S</span> </li>
+										<li> <span>坚果 R1</span> </li>
+										<li> <span>坚果 3</span> </li>
+										<li> <span>闹钟式无线充电座</span> </li>
+										<li> <span>畅呼吸净化器</span> </li>
+										<li> <span>移动电源</span> </li>
+										<li> <span>T恤</span> </li>
+										<li> <span>帆布鞋</span> </li>
+										<li> <span>保护套</span> </li>
+										<li> <span>口罩</span> </li> 
+										</ul> 
+									</div> 
+								</div>
+							</div>
+							<ul id="nav-aside" class="nav-aside" style="display: none;">	
+								<li class="nav-user">
+									<a href="#"></a>
+									<div class="nav-user-wrapper"> 	
+										<div class="nav-user-list"> 
+											<dl class="nav-user-avatar"> 
+												<dd> 
+													<span></span> 
+												</dd> 
+												<dt>+86 135****0177</dt> 
+											</dl> 
+											<ul> 
+												<li class="order">
+													<a href="//www.smartisan.com/user/order/list">我的订单</a>
+												</li> 
+												<li class="support">
+													<a href="//www.smartisan.com/user/aftersale/list">售后服务</a>
+												</li> 
+												<li class="coupon">
+													<a href="//www.smartisan.com/user/coupon">我的优惠</a>
+												</li> 
+												<li class="information">
+													<a href="//www.smartisan.com/user/account">账户资料</a>
+												</li> 
+												<li class="address">
+													<a href="//www.smartisan.com/user/address/list">收货地址</a>
+												</li> 
+												<li class="logout">
+													<a>退出</a>
+												</li> 
+											</ul> 
+										</div> 
+									</div>
+								</li>
+								<li class="nav-cart">
+									<a href="#"></a>
+									<div class="nav-cart-wrapper">
+										<div class="nav-cart-list">
+											
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div  class="nav-goods-panel"> 
+
+					</div>
+				</div>	
+			</div>
+		</header>
+		<div class="home-wrapper">
+			<div class="banner home-box" id="js-banner">
+			 	<div>
+			 		<div class="banner-item active">
+			  			<a target="_blank" href="https://www.smartisan.com/activity/sale/189"> 
+			  			<img src="https://resource.smartisan.com/resource/2/2018112801.png?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> </a>
+			   		</div>
+			   		<div class="banner-item"> 
+			   			<a target="_blank" href="https://www.smartisan.com/item/100046401">
+			    		<img src="https://resource.smartisan.com/resource/s/shoujiao1111111.png?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> </a> 
+			    	</div>
+			    	<div class="banner-item "> 
+			    		<a target="_blank" href="https://www.smartisan.com/activity/sale/175"> 
+			    		<img src="https://resource.smartisan.com/resource/x/xinpinjuheshoujiao1111.png?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+			    		</a> 
+			    	</div>
+			    	<div class="banner-item"> 
+			     		<a target="_blank" href="https://www.smartisan.com/activity/sale/191">
+			      		<img src="https://resource.smartisan.com/resource/1/15411.png?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;">
+			       		</a> 
+			      	</div> 
+			    </div> 
+		       	<div class="banner-focus"> 
+		       		<a class="active"></a>
+		       		<a class=""></a> 
+		       		<a class=""></a> 
+		       		<a class=""></a>  
+		       </div>
+			</div>
+			<div class="home-box"> 
+				<advertise _nghost-c8="">
+					<div class="advertise">
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/509ed0455df8fda5d00ef0355d1e31ca.jpg?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/activity/sale/175"></a> 
+						</div>
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/b0076513d10b981991638c59ac34fa92.jpg?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/item/100046401"></a> 
+						</div>
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/3c9489bedef473d26af2ffa15d4b114f.jpg?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/item/100051707"></a> 
+						</div>
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/3e1ddbac5336b586100c1bfb79112a5c.jpg?x-oss-process=image/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/item/100033802"></a> 
+						</div> 
+					</div> 
+				</advertise> 
+			</div>
+			<div class="home-box">
+			 	<!-- 热门商品 -->
+			</div>
+			<section class="mianbox">
+				<!-- 商品列表 -->
+			</section>
+			<div class="home-box"> 
+				<advertise _nghost-c8="">
+					<div class="advertise">
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/f82c9e2774ce0e391a17f1b20c1e0c90.jpg?x-oss-process=image/resize,w_304/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/pr/#/video/conference-r1 "></a> 
+						</div>
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/5ea6f0905535d7b11258e9a0f9b1abeb.jpg?x-oss-process=image/resize,w_304/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/os/#/6-x"></a> 
+						</div>
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/509151eb8ee49b5ffb3a8a7496c30924.jpg?x-oss-process=image/resize,w_304/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/pr/#/video/changhuxi-jinghuaqi"></a> 
+						</div>
+						<div class="advertise-item"> 
+							<img src="https://resource.smartisan.com/resource/m/minibanner_03.jpg?x-oss-process=image/resize,w_304/format,jpg/quality,Q_100" style="opacity: 1; transition: opacity 0.3s ease-in-out 0s;"> 
+							<a target="_blank" href="https://www.smartisan.com/pr/#/video/onestep-introduction"></a> 
+						</div> 
+					</div> 
+				</advertise> 
+			</div>
+			<div class="page-home home-box"> 
+				<section class="app-panel"> 
+					<div class="box"> 
+						<header class="storey-title"> 
+							<h5 class="title">锤子应用</h5> 
+							<div class="floor-page"> 
+								<a class="floor-page-link" href="//www.smartisan.com/apps/" target="_blank">全部应用<i class="smartisan-icon gt">></i>
+								</a> 
+							</div> 
+						</header> 
+						<ul> 
+							<li class="btn-style handshaker"> 
+								<div class="app-content"> 
+									<div class="app-image"></div> 
+									<div class="info"> 
+										<h6>HandShaker</h6> 
+										<p> 
+										<span>在 Mac 和 Windows 电脑上也可以方便自如地</span> <span>管理你在 Android 手机中的内容</span> 
+										</p> 
+									</div> 
+									<div class="platform"> 
+										<span class="platform-icon platform-icon-win platform-icon-border-right"></span> 
+										<span class="platform-icon platform-icon-ios"></span> 
+									</div> 
+								</div> 
+								<div class="operation"> 
+									<div class="handshaker-buttons">  
+										<a class="handshaker-win" href="//sf.smartisan.com/download/win/simple/10" target="_blank"> 
+										<span class="btn-icon"></span> 
+										<span class="btn-text">下载 Windows 版安装文件</span></a> 
+										<a class="handshaker-mac" href="//sf.smartisan.com/sf/release/download" target="_blank"> 
+										<span class="btn-icon"></span> 
+										<span class="btn-text">下载 Mac 版安装文件</span> 
+										</a> 
+									</div> 
+									<a href="//www.smartisan.com/apps/handshaker" target="_blank">进一步了解 HandShaker<i class="smartisan-icon gt"></i></a> 
+								</div> 
+								<a class="app-link" href="//www.smartisan.com/apps/handshaker" target="_blank" title="进一步了解 HandShaker"></a> 
+							</li> 
+							<li class="notes"> 
+								<div class="app-content"> 
+									<div class="app-image"></div> 
+									<div class="info"> 
+										<h6>锤子便签</h6> 
+										<p> 
+										<span>雅致的信纸、精心调整的文字排版</span> 
+										<span>这可能是最让人想写字的便签应用</span> 
+										</p> 
+									</div> 
+									<div class="platform"> 
+										<span class="platform-icon platform-icon-android platform-icon-border-right">
+										</span> 
+										<span class="platform-icon platform-icon-ios">
+										</span> 
+									</div> 
+								</div> 
+								<div class="operation"> 
+									<div class="qrcode" id="qrcode-note"> 
+									</div> 
+									<p>扫二维码下载锤子便签</p> 
+									<a class="ng-binding" href="//www.smartisan.com/apps/notes" target="_blank">进一步了解锤子便签<i class="smartisan-icon gt"></i>
+									</a> 
+								</div> 
+								<a class="app-link" href="//www.smartisan.com/apps/notes" target="_blank" title="进一步了解锤子便签"></a> 
+							</li> 
+							<li class="reader"> 
+								<div class="app-content"> 
+									<div class="app-image"></div> 
+									<div class="info"> <h6>锤子阅读</h6> 
+									<p> <span>信息过载年代的干净阅读</span> </p> 
+									</div> 
+									<div class="platform"> <span class="platform-icon platform-icon-android platform-icon-border-right"></span> 
+									<span class="platform-icon platform-icon-ios"></span></div> 
+								</div> 
+								<div class="operation"> 
+									<div class="qrcode" id="qrcode-reader"> 
+									</div> 
+									<p>扫二维码下载锤子阅读</p> 
+									<a class="ng-binding" href="//www.smartisan.com/apps/reader" target="_blank">进一步了解锤子阅读<i class="smartisan-icon gt"></i>
+									</a> 
+								</div> 
+								<a class="app-link" href="//www.smartisan.com/apps/reader" target="_blank" title="进一步了解锤子阅读"></a> 
+							</li> 
+							<li class="bbs"> 
+								<div class="app-content"> 
+									<div class="app-image"> </div> 
+									<div class="info"> 
+										<h6>锤子科技论坛</h6> 
+										<p> 
+											<span>是一个科技论坛</span> 
+											<span>不只是科技论坛</span> 
+										</p> 
+									</div> 
+									<div class="platform"> 
+										<span class="platform-icon platform-icon-android"></span> 
+									</div>
+								</div> 
+								<div class="operation"> 
+									<div class="qrcode" id="qrcode-bbs"> 
+									</div> 
+									<p>扫二维码下载锤子科技论坛</p> 
+									<a class="ng-binding" href="//www.smartisan.com/apps/bbs" target="_blank">进一步了解锤子科技论坛<i class="smartisan-icon gt"></i>
+									</a> 
+								</div> 
+								<a class="app-link" href="//www.smartisan.com/apps/bbs" target="_blank" title="进一步了解锤子科技论坛"></a> 
+							</li> 
+						</ul> 
+					</div> 
+				</section> 
+			</div>
+			<div class="home-box" style="margin-bottom:60px"> 
+				<header class="storey-title"> 
+					<h5 class="title">论坛精选</h5> 
+					<div class="floor-page"> 
+						<a class="floor-page-link" href="http://bbs.smartisan.com/forum.php" target="_blank">前往论坛 <i class="smartisan-icon gt">></i>
+						</a> 
+					</div> 
+				</header> 
+				<image-text> 
+					<div class="image-text-wrapper"> 
+						<div class="image-text-item"> 
+							<div> 
+								<img src="https://resource.smartisan.com/resource/4025f0c8dcca6f70e1e614f74e0c1632.jpg?x-oss-process=image/resize,w_246/format,webp"> 
+								<h5 style="-webkit-box-orient:vertical">[开箱] 坚果 Pro 2S 内敛骚蓝惊艳炫光</h5> 
+								<p style="-webkit-box-orient:vertical">内敛骚蓝，惊艳炫光</p>
+							 	<span>阅读全文&nbsp;<i class="smartisan-icon gt"></i></span> 
+							 	<a target="_blank" href="http://bbs.smartisan.com/thread-1001105-1-1.html ">
+							 </a> 
+							 </div> 
+						 </div>
+						 <div class="image-text-item"> 
+							 <div> 
+							 	<img src="https://resource.smartisan.com/resource/75fe6d344e6a344cd341f282b0b1f8f3.jpg?x-oss-process=image/resize,w_246/format,webp"> 
+							 	<h5 style="-webkit-box-orient:vertical">[开箱] 坚果 Pro 2S 惊艳开箱</h5> 
+							 	<p style="-webkit-box-orient:vertical">全新的炫光蓝及炫光红色相当惊艳</p> 
+							 	<span>阅读全文&nbsp;<i class="smartisan-icon gt"></i>
+							 	</span> 
+							 	<a target="_blank" href="http://bbs.smartisan.com/thread-974248-1-1.html">
+							 	</a> 
+							 </div> 
+						 </div>
+						 <div class="image-text-item"> 
+							 <div> 
+							 	<img src="https://resource.smartisan.com/resource/8cc33abdf12f87b809b1858de2151d40.jpg?x-oss-process=image/resize,w_246/format,webp"> 
+							 	<h5 style="-webkit-box-orient:vertical">[开箱] 纯白色坚果 Pro2 图赏</h5> 
+							 	<p style="-webkit-box-orient:vertical">有美如斯，冰清玉洁</p> 
+								 <span>阅读全文&nbsp;<i class="smartisan-icon gt"></i>
+								 </span> 
+							 	<a target="_blank" href="http://bbs.smartisan.com/thread-990692-1-1.html">
+							 	</a> 
+							 </div> 
+						 </div>
+						 <div class="image-text-item"> 
+							 <div> 
+								 <img src="https://resource.smartisan.com/resource/407bcb8a886ddcb5e97045dbdafad990.jpeg?x-oss-process=image/resize,w_246/format,webp"> 
+								 <h5 style="-webkit-box-orient:vertical">[合辑] 八月优秀摄影作品欣赏</h5> 
+								 <p style="-webkit-box-orient:vertical">8 月的优秀作品如期而至</p> 
+								 <span>阅读全文&nbsp;<i class="smartisan-icon gt"></i>
+								 </span> 
+								 <a target="_blank" href="http://bbs.smartisan.com/thread-979732-1-1.html"></a>
+							 </div> 
+						 </div> 
+					 </div>
+				 </image-text> 
+			</div>
+		</div>
+		<sm-footer> 
+			<div class="footer"> 
+				<div class="container"> 
+					<div class="siteinfo"> 
+						<ul class="nav-footer"> 
+							<li> 
+								<h3>订单服务</h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/instruction">购买指南</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/payment">支付方式</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/delivery">送货政策</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>服务支持 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/service">售后服务</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/servicelist">维修门店</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/storelist">零售门店</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>自助服务 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/self-service">热点咨询</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/self-service/6">预约购买</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/self-service/7">订单物流</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>媒体中心 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/pr/#/news-center">新闻动态</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/pr/#/videos">官方视频</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/pr/#/pictures">图片资源</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>关于公司 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/about">公司简介</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/join">加入我们</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/awards">荣誉奖项</a> 
+									</li>
+								</ul> 
+							</li> 
+							<li> 
+								<h3>关注我们</h3> 
+								<ul> 
+									<li>
+										<a href="http://weibo.com/u/2968634427" target="_blank">新浪微博</a>
+									</li>
+									<li class="weixin"> 
+										<a>官方微信</a> 
+										<div class="mask">
+										</div>
+										<div class="qrcode"> 
+											<div class="close-btn"></div> 
+											<h4>锤子科技官方微信</h4> 
+											<h6>打开微信，点击右上角的“+”，选择“扫一扫”功能，用摄像头对准下方二维码即可。</h6> 
+											<div class="qrcode-bg"></div> 
+										</div> 
+									</li> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/contact" target="_blank">联系我们</a> 
+									</li> 
+								</ul> 
+							</li> 
+						</ul> 
+						<ul class="service"> 
+							<li class="tel">400 - 626 - 5666</li> 
+							<li class="time">周一到周日 9:00 - 18:00</li> 
+							<li class="desc">(仅收市话费)</li> 
+							<li class="online"> 
+								<a href="//www.smartisan.com/support/#/self-service">	
+									<span class="smartisan-icon info-question"></span>在线帮助</a> 
+							</li> 
+						</ul> 
+						<div class="language-switch"> 
+							<ul> 
+								<li> 
+									<a class="flag-en">English</a> 
+								</li>
+							</ul> 
+							<h3> 
+								<a class="flag-cn">中文<span class="smartisan-icon caret-down"></span></a> 
+							</h3> 
+						</div> 
+					</div> 
+					<div class="copyright"> 
+						<h4>Copyright © <span copyright-year=""></span>2018, Smartisan Digital Co., Ltd. All Rights Reserved.</h4> 
+						<h5 class="company">北京锤子数码科技有限公司</h5> 
+						<ul class="privacy"> 
+							<li> 
+								<a href="//www.smartisan.com/support/#/agreement">法律声明</a> 
+							</li> 
+							<li> 
+								<a href="//www.smartisan.com/support/#/privacy">隐私条款</a> 
+							</li> 
+							<li class="devstore"> 
+								<a href="http://dev.smartisan.com/">开发者中心</a> 
+							</li> 
+						</ul> 
+						<h6> 
+							<a href="http://www.miibeian.gov.cn/" target="_blank"> 
+								<span>京 ICP 备 14041720 号 - 1</span>
+								<span>京 ICP 证 140622 号</span><span>京公网安备 11010502025474</span> 
+							</a>
+							<a href="//static.smartisanos.cn/common/img/footer/network_operation_permit.jpg" target="_blank">
+						 		<span>网络文化经营许可证京网文 (2016) 2284 - 266 号</span>
+							</a> 
+						</h6>
+					</div> 
+				</div> 
+			</div>
+		</sm-footer>
+
+
+	
+		
+	</body>
+</html>

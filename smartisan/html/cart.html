@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cart</title>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+	<script src="../js/jquery-1.10.1.min.js"></script>
+	<script src = '../js/jquery.cookie.js'></script>
+	<script src="../js/ajax.js"></script>
+	<script src="../js/cart.js"></script>
+</head>
+<body>
+	<header>
+			<div class="nav-top">
+				<div class="logo"><a href="#"></a></div>
+				<div class=" container">
+					<ul class="nav-list">
+						<li><a class="active" href="">在线商城</a></li>
+						<li><a href="">坚果 Pro 2S</a></li>
+						<li><a href="">坚果 R1</a></li>
+						<li><a href="">坚果 TNT 工作站</a></li>
+						<li><a href="">Smartisan OS</a></li>
+						<li><a href="">欢喜云</a></li>
+						<li><a href="">应用</a></li>
+						<li><a href="">论坛</a></li>
+						<li><a href="">荣誉与奖项</a></li>
+					</ul>
+					<ul class="nav-aside">	
+						<li class="nav-user">
+							<a href="html/login.html"></a>
+							<div class="nav-user-wrapper"> 	
+								<div class="nav-user-list"> 
+									<dl class="nav-user-avatar"> 
+										<dd> 
+											<span></span> 
+										</dd> 
+										<dt>+86 135****0177</dt> 
+									</dl> 
+									<ul> 
+										<li class="order">
+											<a href="//www.smartisan.com/user/order/list">我的订单</a>
+										</li> 
+										<li class="support">
+											<a href="//www.smartisan.com/user/aftersale/list">售后服务</a>
+										</li> 
+										<li class="coupon">
+											<a href="//www.smartisan.com/user/coupon">我的优惠</a>
+										</li> 
+										<li class="information">
+											<a href="//www.smartisan.com/user/account">账户资料</a>
+										</li> 
+										<li class="address">
+											<a href="//www.smartisan.com/user/address/list">收货地址</a>
+										</li> 
+										<li class="logout">
+											<a>退出</a>
+										</li> 
+									</ul> 
+								</div> 
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>		
+	</header>
+	<shopping-cart _nghost-c5=""> 
+	<div class="page-cart"> 
+	<div class="gray-box" id="cart_box"> 
+		<div class="title"> 
+			<h2>购物清单</h2> 
+		</div> 
+	<div class="box-inner">  
+		<div class=""> 
+			<div class="cart-table-title"> 
+				<span class="name">商品信息</span> 
+				<span class="operation">操作</span> 
+				<span class="subtotal">小计</span> 
+				<span class="num">数量</span> 
+				<span class="price">单价</span> 
+			</div> 
+			<div class="cart-table"> 
+				<div class="item-list have-margin"> 
+					<!-- <div class="cart-group"> 
+					 	<div>  
+					 		<div class="cart-items"> 
+					 			<new-cart-item >
+					 				<div class="cart-item"> 
+					 					<div class="checkbox-container"> 
+					 						<ui-checkbox >
+					 							<span class="m-blue-checkbox-new checkbox-on"> 
+					 							</span> 
+					 						</ui-checkbox> 
+					 					</div> 
+					 					<div class="item-wrapper"> 
+					 						<div class="items-thumb"> 
+					 							<img height="80" width="80" src="https://resource.smartisan.com/resource/5fd44923e2615731033140914106fcd8.jpg?x-oss-process=image/resize,w_80" alt="Smartisan 蓝牙运动耳机">    
+					 							<a target="_blank" title="Smartisan 蓝牙运动耳机" href="/item/100037801"></a> 
+					 						</div> 
+					 						<div class="name hide-row"> 
+					 							<div class="name-table " > 
+					 							<a target="_blank" title="Smartisan 蓝牙运动耳机" href="/item/100037801">Smartisan 蓝牙运动耳机</a> 
+					 								<ul class="attribute clearfix">  
+					 								<li>红色</li>  
+					 								</ul>  
+					 							</div> 
+					 						</div> 
+					 						<div class="operation"> 
+					 							<a class="items-delete-btn"></a> 
+					 						</div> 
+					 						<div> 
+					 						<div class="subtotal"><i>¥</i> <span>598.00</span></div>  
+					 						<div class="item-cols-num"> 
+					 							<cart-quantity>
+					 								<div  class="quantity"> 
+					 								<span  class="button down">-</span> 
+					 								<span  class="num"> 
+					 								<input  name="" readonly="readonly" type="number" class="ng-untouched ng-pristine ng-valid"> </span> 
+					 								<span  class="button up">+</span>  
+					 								</div> 
+					 							</cart-quantity>   
+					 						</div> 
+					 						<div class="price"><i>¥</i> <span>299.00</span></div> 
+					 						</div> 
+					 					</div> 
+					 				</div>    
+					 			</new-cart-item> 
+					 		</div>   
+					 	</div> 
+					 	<div class="gifts">  
+					 	</div> 
+					 	<div class="gifts">  
+					 	</div> 
+					 </div> --> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+	<div class="cart-bottom-bg fix-bottom" id="cart_bottom"> 
+		<div class="fix-bottom-inner"> 
+			<div class="cart-bar-operation"> 
+			  	<div class="choose-all js-choose-all"> 
+			  		<ui-checkbox _nghost-c7="">
+			  			<span class="m-blue-checkbox-new checkbox-on"> </span> 
+			  		</ui-checkbox> 
+			  	<span class="text-choose-all">全选</span> 
+			  	</div> 
+			  	<div class="delete-choose-goods">删除选中的商品</div>  
+			  </div> 
+			  <!-- <div class="shipping"> 
+				   	<div class="shipping-box"> 
+				   		<div class="shipping-total shipping-num"> 
+				   			<h4 class="highlight">已选择 <i>2</i> 件商品</h4> 
+				   			<h5>共计 <i>2</i> 件商品</h5> 
+				   		</div> 
+				   		<div class="shipping-total shipping-price"> 
+				   			<h4 class="highlight"> 应付总额：<span>￥</span><i><span>598.00</span></i>  </h4>  
+				   			<h5 class="shipping-tips">应付总额不含运费</h5> 
+				   		</div> 
+				   	</div> 
+				   	<span class="jianguo-blue-main-btn big-main-btn js-checkout"> 
+				   	<a>现在结算</a> 
+				   	</span> 
+			   </div> --> 
+		</div> 
+	</div> 
+	<div class="dialog-container"> 
+		<dialog-prompt class="warranty-content ng-tns-c8-0" _nghost-c8="">
+			<modal-container class="ng-tns-c8-0 ng-tns-c11-3" _nghost-c11="">
+				<div class="shadow ng-trigger ng-trigger-animationState" style="opacity: 0; display: none;"> 
+					<div  class="container ng-trigger ng-trigger-animationState" style="opacity: 0; display: none;">  
+						<div class="dialog ng-tns-c8-0" style="width: 306px;"> 
+							<div class="topbar ng-tns-c8-0"> 
+								<div class="title clearfix"> 
+									<h4 class="ng-tns-c8-0">选购保修服务</h4>
+								</div> 
+							</div> 
+							<div class="content">      
+							</div>  
+						</div>  
+					</div> 
+				</div> 
+			</modal-container> 
+		</dialog-prompt>
+		<dialog-prompt _nghost-c8="" class="ng-tns-c8-1">
+			<modal-container class="ng-tns-c8-1 ng-tns-c11-4" >	 
+				<div  class="shadow ng-trigger ng-trigger-animationState" 			style="opacity: 0; display: none;"> 
+					<div  class="container ng-trigger ng-trigger-animationState" style="opacity: 0; display: none;">  
+						<div class="dialog ng-tns-c8-1" style="width: 306px;"> 
+							<div class="topbar ng-tns-c8-1"> 
+								<div class="title clearfix"> 
+									<h4 class="ng-tns-c8-1">提示</h4> 
+								</div> 
+							</div>
+							<div class="content"> 
+								<p class="one-line-info ng-tns-c8-1"> 您确认删除该商品吗？ </p>    
+							</div> 
+							<div class="button-wrapper clearfix ng-tns-c8-1"> 	<button class="button-cancel ng-tns-c8-1"> 取消 </button> 
+								<button class="button-confirm"> 确认 </button> 
+							</div> 
+						</div>  
+					</div> 
+				</div> 
+			</modal-container> 
+		</dialog-prompt> 
+		<dialog-prompt class="dialog-confirm-tips ng-tns-c8-2" _nghost-c8="">	<modal-container class="ng-tns-c8-2 ng-tns-c11-5" _nghost-c11="">
+				<div  class="shadow ng-trigger ng-trigger-animationState" style="opacity: 0; display: none;"> 
+					<div  class="container ng-trigger ng-trigger-animationState" style="opacity: 0; display: none;">  
+						<div class="dialog ng-tns-c8-2" style="width: 306px;"> 
+							<div class="topbar ng-tns-c8-2"> 
+								<div class="title clearfix"> 
+									<h4 class="ng-tns-c8-2">提示</h4> 
+								</div> 
+							</div> 
+							<div class="content"></div> 
+							<div class="button-wrapper clearfix ng-tns-c8-2">  	<button class="button-confirm hide-cancel"> 确认 </button> 
+							</div> 
+						</div>  
+					</div> 
+				</div> 
+			</modal-container> 
+		</dialog-prompt> 
+		</div> 
+		</div> 
+		<markup-dialog _nghost-c9=""> </markup-dialog> 
+	 </div>
+	 </shopping-cart>
+	<sm-footer> 
+			<div class="footer"> 
+				<div class="container"> 
+					<div class="siteinfo"> 
+						<ul class="nav-footer"> 
+							<li> 
+								<h3>订单服务</h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/instruction">购买指南</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/payment">支付方式</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/delivery">送货政策</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>服务支持 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/service">售后服务</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/servicelist">维修门店</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/storelist">零售门店</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>自助服务 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/self-service">热点咨询</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/self-service/6">预约购买</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/self-service/7">订单物流</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>媒体中心 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/pr/#/news-center">新闻动态</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/pr/#/videos">官方视频</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/pr/#/pictures">图片资源</a> 
+									</li> 
+								</ul> 
+							</li>
+							<li> 
+								<h3>关于公司 </h3> 
+								<ul> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/about">公司简介</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/join">加入我们</a> 
+									</li>
+									<li> 
+										<a href="//www.smartisan.com/support/#/awards">荣誉奖项</a> 
+									</li>
+								</ul> 
+							</li> 
+							<li> 
+								<h3>关注我们</h3> 
+								<ul> 
+									<li>
+										<a href="http://weibo.com/u/2968634427" target="_blank">新浪微博</a>
+									</li>
+									<li class="weixin"> 
+										<a>官方微信</a> 
+										<div class="mask">
+										</div>
+										<div class="qrcode"> 
+											<div class="close-btn"></div> 
+											<h4>锤子科技官方微信</h4> 
+											<h6>打开微信，点击右上角的“+”，选择“扫一扫”功能，用摄像头对准下方二维码即可。</h6> 
+											<div class="qrcode-bg"></div> 
+										</div> 
+									</li> 
+									<li> 
+										<a href="//www.smartisan.com/support/#/contact" target="_blank">联系我们</a> 
+									</li> 
+								</ul> 
+							</li> 
+						</ul> 
+						<ul class="service"> 
+							<li class="tel">400 - 626 - 5666</li> 
+							<li class="time">周一到周日 9:00 - 18:00</li> 
+							<li class="desc">(仅收市话费)</li> 
+							<li class="online"> 
+								<a href="//www.smartisan.com/support/#/self-service">	
+									<span class="smartisan-icon info-question"></span>在线帮助</a> 
+							</li> 
+						</ul> 
+						<div class="language-switch"> 
+							<ul> 
+								<li> 
+									<a class="flag-en">English</a> 
+								</li>
+							</ul> 
+							<h3> 
+								<a class="flag-cn">中文<span class="smartisan-icon caret-down"></span></a> 
+							</h3> 
+						</div> 
+					</div> 
+					<div class="copyright"> 
+						<h4>Copyright © <span copyright-year=""></span>2018, Smartisan Digital Co., Ltd. All Rights Reserved.</h4> 
+						<h5 class="company">北京锤子数码科技有限公司</h5> 
+						<ul class="privacy"> 
+							<li> 
+								<a href="//www.smartisan.com/support/#/agreement">法律声明</a> 
+							</li> 
+							<li> 
+								<a href="//www.smartisan.com/support/#/privacy">隐私条款</a> 
+							</li> 
+							<li class="devstore"> 
+								<a href="http://dev.smartisan.com/">开发者中心</a> 
+							</li> 
+						</ul> 
+						<h6> 
+							<a href="http://www.miibeian.gov.cn/" target="_blank"> 
+								<span>京 ICP 备 14041720 号 - 1</span>
+								<span>京 ICP 证 140622 号</span><span>京公网安备 11010502025474</span> 
+							</a>
+							<a href="//static.smartisanos.cn/common/img/footer/network_operation_permit.jpg" target="_blank">
+						 		<span>网络文化经营许可证京网文 (2016) 2284 - 266 号</span>
+							</a> 
+						</h6>
+					</div> 
+				</div> 
+			</div>
+	</sm-footer>
+</body>
+</html>

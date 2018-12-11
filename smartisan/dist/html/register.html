@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>register</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css">
+		<script src="../js/jquery-1.10.1.min.js"></script>
+		<script src = '../js/jquery.cookie.js'></script>
+		<script src="../js/ajax.js"></script>
+		<script src="../js/register.js"></script>
+	</head>
+	<body class="v2 register">
+		<div class="wrapper ng-scope" >
+		<div class="dialog dialog-shadow" style="display: block; margin-top: -347px;">
+			<div class="title" >
+				<div ng-show="is1111" class="return-btn ng-hide" >
+				</div>
+				<h4  class="ng-binding">注册 Smartisan ID</h4>
+				<a class="close">
+				</a>
+			</div> 
+			<div class="content ng-scope"  style="height: auto; opacity: 1;">
+				<form class="reg-form ng-scope ng-pristine ng-invalid ng-invalid-required" name="form" novalidate="" autocomplete="off">
+					<ul class="common-form">
+						<li class="country-region">
+							<div class="input"><span class="icon">
+								<i>国家和地区</i></span> 
+								<span class="cr">国家和地区</span>
+								<span role="button" class="country ng-binding" title="中国" >中国</span>
+							 </div>
+						</li>
+						<li class="username">
+							<div class="input"  style="opacity: 0.618;">
+								<span class="icon"><i>手机号</i></span> 
+								<span class="ccc ng-binding" ng-bind="ccc">+86</span>
+								<label for="mobile" class="placeholder indent">手机号</label>
+								<input type="text" name="mobile"  required=""  class="indent ng-pristine ng-invalid ng-invalid-required ng-valid-mobile-registered ng-valid-mobile">
+								<span id="m-required"  class="warning" >请输入手机号</span> 
+								<span id="m-format-error"  class="warning" >手机号格式错误</span>
+								<span id="m-registered"  class="warning" >该手机已经注册</span>
+							</div>
+						</li>			
+						<li class="verification">	
+						  	<div class="input" >
+								<span class="icon"><i>短信验证码</i></span>
+							   	<label for="verification" class="placeholder">短信验证码</label>
+							   	<input type="text"  name="verification" required="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-mobile-captcha-valid ng-valid-mobile-captcha-reload"> 
+							   	<span id="v-required"  class="warning" >请输入验证码</span> 
+							   	<span id="v-error"  class="warning" >验证码错误</span>
+							   	<span id="v-error2" class="warning" >验证码错误</span>
+							   	<span id="v-again" class="warning" >请重新获取验证码</span>
+							</div>
+						    <div class="btn btn-default disabled" ><a role="button">获取验证码</a>
+						    </div>
+						    <div class="btn btn-default disabled ng-hide" ><a role="button">重新发送<b class="ng-binding"></b></a>
+						     </div>
+						</li>
+						<li class="password">
+						    <div class="input" >
+							    <span class="icon"><i>密码</i></span>
+							    <label for="password" class="placeholder">密码</label> 
+							    <input type="password" name="password" id="password"   required=""  autocomplete="off" class="ng-pristine ng-invalid ng-invalid-required">
+							    <span class="m-eye"></span> 
+							    <span id="p-required"  class="warning" >请输入密码</span>
+							    <span id="p-format-error"  class="warning ng-scope">密码格式错误</span>
+						    </div>
+							<div class="tips"  style="opacity: 0; display: none;">
+								<span class="delta"></span> 
+								<span class="deltapatch"></span>
+								<span class="warningicon"></span>
+								<div class="verifycon"><p>密码长度 6~16 位，数字、字母和符号至少包含两种</p>
+								</div>
+							</div>
+				      	</li>
+				       	<li class="password-repeat" slide-down-register-repeat="needRePassword">
+				       		<div class="input" >
+					       		<span class="icon"><i>重复密码</i></span>
+					       		<label for="repassword" class="placeholder">重复密码</label> 
+					       		<input type="password" autocomplete="off" name="repassword" id="repassword"  required=""  class="ng-pristine ng-invalid ng-invalid-required">
+					        	<span id="rp-required"  class="warning">请重复输入密码</span> 
+					    
+					       		<span id="rp-format-error" class="warning ng-scope" >密码格式错误</span>
+					        	<span id="rp-not-same" class="warning">两次密码输入不一致</span>
+				        	</div>
+				        	<div class="tips" style="opacity: 0; display: none;">
+				        		<span class="delta"></span>
+				         		<span class="deltapatch"></span> 
+				         		<span class="warningicon"></span>
+					         	<div class="verifycon">
+					         	<p>密码长度 6~16 位，数字、字母和符号至少包含两种</p>
+					         	</div>
+				         	</div>
+				        </li>
+					</ul>
+			        <div class="btn-wrapper">
+				        <p class="agreement" >
+				        <span role="checkbox"  class="checkbox">
+				        <a></a>
+				        </span>我已阅读并同意遵守 <a href="http://www.smartisan.com/support/#/agreement" target="_blank">法律声明</a> 和 <a href="http://www.smartisan.com/support/#/privacy" target="_blank">隐私条款</a>
+				        </p>
+				        <div class="btn btn-primary disabled" >
+				        <a role="button">注册</a>
+				        </div>
+				       <!--  <div class="btn btn-primary ng-hide">
+				        <a><span class="btn-loading"></span></a>
+				       </div> -->
+				        <p class="tologin">
+				        <a >如果您已拥有 Smartisan ID，则可在此<span>登录</span>
+				        </a>
+				        </p>
+			        </div>
+				</form>
+			    <div class="country-list dialog-shadow ng-scope">
+			     	<span class="delta-country"></span>
+			        <ul role="listbox">
+				        <li class="ng-binding ng-scope">阿尔巴尼亚</li>
+				        <li class="ng-binding ng-scope">阿富汗</li> 
+				        <li class="ng-binding ng-scope">阿根廷</li> 
+				        <li class="ng-binding ng-scope">阿拉伯联合酋长国</li> 
+				        <li class="ng-binding ng-scope">阿鲁巴</li> 
+				        <li class="ng-binding ng-scope">阿曼</li> 
+				        <li class="ng-binding ng-scope">阿塞拜疆</li> 
+				        <li class="ng-binding ng-scope">埃及</li> 
+				        <li class="ng-binding ng-scope">埃塞俄比亚</li> 
+				        <li class="ng-binding ng-scope">爱尔兰</li> 
+				        <li class="ng-binding ng-scope">爱沙尼亚</li> 
+				        <li class="ng-binding ng-scope">安道尔共和国</li> 
+				        <li class="ng-binding ng-scope">安哥拉</li> 
+				        <li class="ng-binding ng-scope">安圭拉岛</li> 
+				        <li class="ng-binding ng-scope">安提瓜和巴布达</li> 
+				        <li class="ng-binding ng-scope">澳大利亚</li> 
+				        <li class="ng-binding ng-scope">奥地利</li> 
+				        <li class="ng-binding ng-scope">巴巴多斯</li> 
+				        <li class="ng-binding ng-scope">巴布亚新几内亚</li> 
+				        <li class="ng-binding ng-scope">巴哈马</li> 
+				        <li class="ng-binding ng-scope">巴基斯坦</li> 
+				        <li class="ng-binding ng-scope">巴拉圭</li> 
+				        <li class="ng-binding ng-scope">巴林</li> 
+				        <li class="ng-binding ng-scope">巴拿马</li> 
+				        <li class="ng-binding ng-scope">巴西</li> 
+				        <li class="ng-binding ng-scope">白俄罗斯</li> 
+				        <li class="ng-binding ng-scope">百慕大群岛</li> 
+				        <li class="ng-binding ng-scope">保加利亚</li> 
+				        <li class="ng-binding ng-scope">贝宁</li> 
+				        <li class="ng-binding ng-scope">比利时</li> 
+				        <li class="ng-binding ng-scope">冰岛</li> 
+				        <li class="ng-binding ng-scope">波多黎各</li> 
+				        <li class="ng-binding ng-scope">波黑</li> 
+				        <li class="ng-binding ng-scope">波兰</li> 
+				        <li class="ng-binding ng-scope">玻利维亚</li> 
+				        <li class="ng-binding ng-scope">伯利兹</li> 
+				        <li class="ng-binding ng-scope">博茨瓦纳</li> 
+				        <li class="ng-binding ng-scope">不丹</li> 
+				        <li class="ng-binding ng-scope">布基纳法索</li> 
+				        <li class="ng-binding ng-scope">布隆迪</li> 
+				        <li class="ng-binding ng-scope">丹麦</li> 
+				        <li class="ng-binding ng-scope">德国</li> 
+				        <li class="ng-binding ng-scope">多哥</li> 
+				        <li class="ng-binding ng-scope">多米尼加共和国</li> 
+				        <li class="ng-binding ng-scope">俄罗斯</li> 
+				        <li class="ng-binding ng-scope">厄瓜多尔</li> 
+				        <li class="ng-binding ng-scope">法国</li> 
+				        <li class="ng-binding ng-scope">法属玻利尼西亚</li> 
+				        <li class="ng-binding ng-scope">法属圭亚那</li> 
+				        <li class="ng-binding ng-scope">菲律宾</li> 
+				        <li class="ng-binding ng-scope">斐济</li> 
+				        <li class="ng-binding ng-scope">芬兰</li> 
+				        <li class="ng-binding ng-scope">佛得角共和国</li> 
+				        <li class="ng-binding ng-scope">冈比亚</li> 
+				        <li class="ng-binding ng-scope">哥伦比亚</li> 
+				        <li class="ng-binding ng-scope">哥斯达黎加</li> 
+				        <li class="ng-binding ng-scope">格林纳达</li> 
+				        <li class="ng-binding ng-scope">格鲁吉亚</li> 
+				        <li class="ng-binding ng-scope">古巴</li> 
+				        <li class="ng-binding ng-scope">关岛</li> 
+				        <li class="ng-binding ng-scope">圭亚那</li> 
+				        <li class="ng-binding ng-scope">哈萨克斯坦</li> 
+				        <li class="ng-binding ng-scope">海地</li> 
+				        <li class="ng-binding ng-scope">韩国</li> 
+				        <li class="ng-binding ng-scope">荷兰</li> 
+				        <li class="ng-binding ng-scope">荷属安的列斯</li> 
+				        <li class="ng-binding ng-scope">黑山共和国</li> 
+				        <li class="ng-binding ng-scope">洪都拉斯</li> 
+				        <li class="ng-binding ng-scope">吉布提</li> 
+				        <li class="ng-binding ng-scope">吉尔吉斯斯坦</li> 
+				        <li class="ng-binding ng-scope">几内亚</li> 
+				        <li class="ng-binding ng-scope">加拿大</li> 
+				        <li class="ng-binding ng-scope">加纳</li> 
+				        <li class="ng-binding ng-scope">加蓬</li> 
+				        <li class="ng-binding ng-scope">柬埔寨</li> 
+				        <li class="ng-binding ng-scope">捷克</li> 
+				        <li class="ng-binding ng-scope">津巴布韦</li> 
+				        <li class="ng-binding ng-scope">喀麦隆</li> 
+				        <li class="ng-binding ng-scope">卡塔尔</li> 
+				        <li class="ng-binding ng-scope">开曼群岛</li> 
+				        <li class="ng-binding ng-scope">科特迪瓦</li> 
+				        <li class="ng-binding ng-scope">科威特</li> 
+				        <li class="ng-binding ng-scope">克罗地亚</li> 
+				        <li class="ng-binding ng-scope">肯尼亚</li> 
+				        <li class="ng-binding ng-scope">库克群岛</li> 
+				        <li class="ng-binding ng-scope">拉脱维亚</li> 
+				        <li class="ng-binding ng-scope">莱索托</li> 
+				        <li class="ng-binding ng-scope">老挝</li> 
+				        <li class="ng-binding ng-scope">黎巴嫩</li> 
+				        <li class="ng-binding ng-scope">立陶宛</li> 
+				        <li class="ng-binding ng-scope">利比里亚</li> 
+				        <li class="ng-binding ng-scope">利比亚</li> 
+				        <li class="ng-binding ng-scope">列支敦士登</li> 
+				        <li class="ng-binding ng-scope">卢森堡</li> 
+				        <li class="ng-binding ng-scope">卢旺达</li> 
+				        <li class="ng-binding ng-scope">罗马尼亚</li> 
+				        <li class="ng-binding ng-scope">马达加斯加</li> 
+				        <li class="ng-binding ng-scope">马尔代夫</li> 
+				        <li class="ng-binding ng-scope">马耳他</li> 
+				        <li class="ng-binding ng-scope">马拉维</li> 
+				        <li class="ng-binding ng-scope">马来西亚</li> 
+				        <li class="ng-binding ng-scope">马里</li> 
+				        <li class="ng-binding ng-scope">马提尼克</li> 
+				        <li class="ng-binding ng-scope">毛里求斯</li> 
+				        <li class="ng-binding ng-scope">美国</li> 
+				        <li class="ng-binding ng-scope">美属萨摩亚群岛</li> 
+				        <li class="ng-binding ng-scope">蒙古</li> 
+				        <li class="ng-binding ng-scope">蒙特塞拉特岛</li> 
+				        <li class="ng-binding ng-scope">孟加拉国</li> 
+				        <li class="ng-binding ng-scope">秘鲁</li> 
+				        <li class="ng-binding ng-scope">摩尔多瓦</li> 
+				        <li class="ng-binding ng-scope">摩洛哥</li> 
+				        <li class="ng-binding ng-scope">摩纳哥</li> 
+				        <li class="ng-binding ng-scope">莫桑比克</li> 
+				        <li class="ng-binding ng-scope">墨西哥</li> 
+				        <li class="ng-binding ng-scope">纳米比亚</li> 
+				        <li class="ng-binding ng-scope">南非</li> 
+				        <li class="ng-binding ng-scope">尼加拉瓜</li> 
+				        <li class="ng-binding ng-scope">尼泊尔</li> 
+				        <li class="ng-binding ng-scope">尼日尔</li> 
+				        <li class="ng-binding ng-scope">尼日利亚</li> 
+				        <li class="ng-binding ng-scope">挪威</li> 
+				        <li class="ng-binding ng-scope">葡萄牙</li> 
+				        <li class="ng-binding ng-scope">日本</li> 
+				        <li class="ng-binding ng-scope">瑞典</li> 
+				        <li class="ng-binding ng-scope">瑞士</li> 
+				        <li class="ng-binding ng-scope">萨尔瓦多</li> 
+				        <li class="ng-binding ng-scope">萨摩亚</li> 
+				        <li class="ng-binding ng-scope">塞尔维亚共和国</li> 
+				        <li class="ng-binding ng-scope">塞拉利昂</li> 
+				        <li class="ng-binding ng-scope">塞内加尔</li> 
+				        <li class="ng-binding ng-scope">塞浦路斯</li> 
+				        <li class="ng-binding ng-scope">塞舌尔</li> 
+				        <li class="ng-binding ng-scope">沙特阿拉伯</li> 
+				        <li class="ng-binding ng-scope">圣多美和普林西比</li> 
+				        <li class="ng-binding ng-scope">圣卢西亚</li> 
+				        <li class="ng-binding ng-scope">圣马力诺</li> 
+				        <li class="ng-binding ng-scope">圣文森特岛</li> 
+				        <li class="ng-binding ng-scope">斯里兰卡</li> 
+				        <li class="ng-binding ng-scope">斯洛伐克</li> 
+				        <li class="ng-binding ng-scope">斯洛文尼亚</li> 
+				        <li class="ng-binding ng-scope">斯威士兰</li> 
+				        <li class="ng-binding ng-scope">苏里南</li> 
+				        <li class="ng-binding ng-scope">索马里</li> 
+				        <li class="ng-binding ng-scope">塔吉克斯坦</li> 
+				        <li class="ng-binding ng-scope">台湾</li> 
+				        <li class="ng-binding ng-scope">泰国</li> 
+				        <li class="ng-binding ng-scope">坦桑尼亚</li> 
+				        <li class="ng-binding ng-scope">汤加</li> 
+				        <li class="ng-binding ng-scope">特立尼达和多巴哥</li> 
+				        <li class="ng-binding ng-scope">突尼斯</li> 
+				        <li class="ng-binding ng-scope">土耳其</li> 
+				        <li class="ng-binding ng-scope">土库曼斯坦</li> 
+				        <li class="ng-binding ng-scope">危地马拉</li> 
+				        <li class="ng-binding ng-scope">委内瑞拉</li> 
+				        <li class="ng-binding ng-scope">文莱</li> 
+				        <li class="ng-binding ng-scope">乌干达</li> 
+				        <li class="ng-binding ng-scope">乌克兰</li> 
+				        <li class="ng-binding ng-scope">乌拉圭</li> 
+				        <li class="ng-binding ng-scope">乌兹别克斯坦</li>
+				        <li class="ng-binding ng-scope">希腊</li>
+				        <li class="ng-binding ng-scope">西班牙</li> 
+				        <li class="ng-binding ng-scope">新加坡</li> 
+				        <li class="ng-binding ng-scope">新西兰</li> 
+				        <li class="ng-binding ng-scope">匈牙利</li> 
+				        <li class="ng-binding ng-scope">牙买加</li> 
+				        <li class="ng-binding ng-scope">亚美尼亚</li> 
+				        <li class="ng-binding ng-scope">也门</li> 
+				        <li class="ng-binding ng-scope">伊拉克</li>
+				        <li class="ng-binding ng-scope">伊朗</li> 
+				        <li class="ng-binding ng-scope">以色列</li> 
+				        <li class="ng-binding ng-scope">意大利</li> 
+				        <li class="ng-binding ng-scope">印度</li> 
+				        <li class="ng-binding ng-scope">印度尼西亚</li> 
+				        <li class="ng-binding ng-scope">英国</li> 
+				        <li class="ng-binding ng-scope">约旦</li> 
+				        <li class="ng-binding ng-scope">越南</li> 
+				        <li class="ng-binding ng-scope">赞比亚</li> 
+				        <li class="ng-binding ng-scope">乍得</li> 
+				        <li class="ng-binding ng-scope">直布罗陀</li> 
+				        <li class="ng-binding ng-scope">智利</li> 
+				        <li class="ng-binding ng-scope">中非共和国</li> 
+				        <li class="ng-binding ng-scope selected">中国</li> 
+				        <li class="ng-binding ng-scope">中国澳门特别行政区</li>
+				        <li class="ng-binding ng-scope">中国香港特别行政区</li> 
+			        </ul>
+			    </div>
+			</div>
+		</div>
+		<div class="loading" style="display: none;"></div>
+        <div class="copyright">
+	        <div class="clearfix">
+		        <h2>Copyright © <span copyright-year="">2017</span>, Smartisan Digital Co., Ltd. All Rights Reserved.</h2>
+		        <h3 class="company">北京锤子数码科技有限公司</h3>
+		        <ul class="privacy">
+			        <li>
+			         	<a href="http://www.smartisan.com/support/#/agreement">法律声明</a>
+			        </li>
+			        <li>
+			         	<a href="http://www.smartisan.com/support/#/privacy">隐私条款</a>
+			        </li>
+		        </ul>
+	        </div>
+         	<h4><a href="http://www.miibeian.gov.cn/" target="_blank"><span>京ICP备14041720号-1</span><span>京ICP证140622号</span><span>京公网安备11010502025474</span></a></h4>
+        </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+[{
+	"title":"热门商品",
+	"child":[{
+		"img":["https://resource.smartisan.com/resource/6668df0e297bf04702df6d166091ac51.png?x-oss-process=image/resize,w_216/format,webp",
+				"https://resource.smartisan.com/resource/25cc6e783a664fbdf83c3c34774a9826.png?x-oss-process=image/resize,w_216/format,webp",
+				"https://resource.smartisan.com/resource/2f2afca6f88e3aef5b1f332ea0c1d65a.png?x-oss-process=image/resize,w_216/format,webp",
+				"https://resource.smartisan.com/resource/6668df0e297bf04702df6d166091ac51.png?x-oss-process=image/resize,w_216/format,webp"
+		],
+		"name":"坚果 Pro 2S",
+		"info":"双系统，无限屏",
+		"yanse":"黑色",
+		"color":["https://resource.smartisan.com/resource/attr/v2/1000517/4E69E03CE93DC22F42A905057FB7CB95/origin.png?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/attr/v2/1000517/099DCE469DCB49B6D2580989AA0B5851/origin.png?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/attr/v2/1000517/3C85C069DF7EDB21B2E5ECFA4C684803/origin.png?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/attr/v2/1000517/CA9FDE02CD273B061A4370946EF3B48C/origin.png?x-oss-process=image/resize,w_20"],
+		"price":"2,298.00",
+		"activity":"买赠"
+	},{
+		"img":["https://resource.smartisan.com/resource/17f254e6f809355d8fe66260ccb48fb0.png?x-oss-process=image/resize,w_216/format,webp",
+				"https://resource.smartisan.com/resource/efb9aacaab54e8a7fe5bbfbe8979adcd.png?x-oss-process=image/resize,w_216/format,webp",
+				"https://resource.smartisan.com/resource/17f254e6f809355d8fe66260ccb48fb0.png?x-oss-process=image/resize,w_216/format,webp"
+		],
+		"name":"坚果 R1",
+		"info":"次世代旗舰手机，内藏来自未来的“电脑”",
+		"yanse":"黑色",
+		"color":["https://resource.smartisan.com/resource/3a2977aae968cc8fc651afddc606d545.jpg?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/17b760796d75b10a7a138a4e6afd1b6a.jpg?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/32cf93592121641ffc692e4b3ec54900.jpg?x-oss-process=image/resize,w_20"],
+		"price":"3,799.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/6ff92d05a3bfab4fad489ca04d3eea5a.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"畅呼吸智能空气净化器 · 标准版",
+		"info":"超强净化能力、超低噪音、超长寿命",
+		"yanse":"白色",
+		"color":["https://resource.smartisan.com/resource/e647e77234f9ed0fde9dd4084d35ff57.jpg?x-oss-process=image/resize,w_20"],
+		"price":"3,499.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/71432ad30288fb860a4389881069b874.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"畅呼吸智能空气净化器超级除甲醛版",
+		"info":"超强除甲醛能力，超低噪音，智能操控",
+		"yanse":"白色",
+		"color":["https://resource.smartisan.com/resource/e647e77234f9ed0fde9dd4084d35ff57.jpg?x-oss-process=image/resize,w_20"],
+		"price":"3,499.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/fa25116df765cdbe469d31cb1a5d8c13.jpg?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"Smartisan 卫衣 圆领 老友记",
+		"info":"风格简洁、舒适服帖",
+		"yanse":"黑色",
+		"color":["https://resource.smartisan.com/resource/bf1fbd3de44ee3ae65d7b0daa7343cb4.jpg?x-oss-process=image/resize,w_20"],
+		"price":"149.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/afcec520933673b8e03a867e6502f6e0.jpg?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"坚果 “电池形电池”移动电源",
+		"info":"别具一格的“全能型”移动电源",
+		"yanse":"红色",
+		"color":["https://resource.smartisan.com/resource/73ed9b2a0a26e7476e5246245eef31c1.jpg?x-oss-process=image/resize,w_20"],
+		"price":"49.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/cb762c4e848239e3173f2d1eb94c9628.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"坚果 Pro 2 特别版",
+		"info":"漂亮得不像实力派",
+		"yanse":" 白色",
+		"color":["https://resource.smartisan.com/resource/attr/v2/1000479/97BBF007C06CF961411BC376A98C586D/origin.png?x-oss-process=image/resize,w_20"],
+		"price":"1,899.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/13e91511f6ba3227ca5378fd2e93c54b.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"坚果 3",
+		"info":"漂亮得不像实力派",
+		"yanse":"黑色",
+		"color":["https://resource.smartisan.com/resource/attr/v2/1000406/464C39B2C7BF66E6EDA4B6283D7100ED/origin.jpg?x-oss-process=image/resize,w_20"],
+		"price":"2,298.00"
+	}]
+},{
+	"title":"新品发布",
+	"advertise":"https://resource.smartisan.com/resource/896f85d0ee0669ee1fdd8efc19bffc57.jpg?x-oss-process=image/resize,w_609/format,jpg/quality,Q_100",
+	"child":[{
+		"img":["https://resource.smartisan.com/resource/d1dcca9144e8d13ffb33026148599d0a.png?x-oss-process=image/resize,w_216/format,webp",
+			"https://resource.smartisan.com/resource/190a2b0f96274c85973e1dd6ba3b511b.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"地平线 8 号商务旅行箱",
+		"info":"为了野心和远方",
+		"color":["https://resource.smartisan.com/resource/e473b47b676d5e88b830994777bbd162.jpg?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/3b995dc3fccb7cf066584b1a0f036209.jpg?x-oss-process=image/resize,w_20"],
+		"price":"999.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/db4895e45ee6f3339037dbf7200e63f2.png?x-oss-process=image/resize,w_216/format,webp",
+			"https://resource.smartisan.com/resource/190a2b0f96274c85973e1dd6ba3b511b.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"地平线 8 号旅行箱",
+		"info":"为了野心和远方",
+		"color":["https://resource.smartisan.com/resource/e473b47b676d5e88b830994777bbd162.jpg?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/dddd334ee9e667503425b40cc9c0320b.jpg?x-oss-process=image/resize,w_20"],
+		"price":"299.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/da6640a58eb86fe2d5295e17b245ec01.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"畅呼吸智能落地式加湿器",
+		"info":"健康无雾、高效加湿、超低噪音",
+		"color":["https://resource.smartisan.com/resource/e647e77234f9ed0fde9dd4084d35ff57.jpg?x-oss-process=image/resize,w_20"],
+		"price":"1,999.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/1fe65e495dd3d5de92b95e6797452658.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"畅呼吸桌面式加湿器",
+		"info":"自然蒸发、无雾更健康",
+		"color":["https://resource.smartisan.com/resource/e647e77234f9ed0fde9dd4084d35ff57.jpg?x-oss-process=image/resize,w_20"],
+		"price":"999.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/cc9967811508ec86638ccebe7b446460.jpg?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"坚果蓝牙遥控器",
+		"info":"简单操作，实现精准控制",
+		"color":["https://resource.smartisan.com/resource/74ecab0bcefd2e1ad858df44ecf42876.jpg?x-oss-process=image/resize,w_20"],
+		"price":"79.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/f55641e23f35f6dd82226b6c4a043f00.jpg?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"坚果三脚架自拍杆",
+		"info":"两种模式，随时随地都能拍得开心",
+		"color":["https://resource.smartisan.com/resource/5b4da8bcedbb8e18a0ad60e982013a81.jpg?x-oss-process=image/resize,w_20"],
+		"price":"99.00"
+	}]
+},{
+	"title":"新品发布",
+	"advertise":"https://resource.smartisan.com/resource/896f85d0ee0669ee1fdd8efc19bffc57.jpg?x-oss-process=image/resize,w_609/format,jpg/quality,Q_100",
+	"child":[{
+		"img":["https://resource.smartisan.com/resource/d1dcca9144e8d13ffb33026148599d0a.png?x-oss-process=image/resize,w_216/format,webp",
+			"https://resource.smartisan.com/resource/190a2b0f96274c85973e1dd6ba3b511b.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"地平线 8 号商务旅行箱",
+		"info":"为了野心和远方",
+		"color":["https://resource.smartisan.com/resource/e473b47b676d5e88b830994777bbd162.jpg?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/3b995dc3fccb7cf066584b1a0f036209.jpg?x-oss-process=image/resize,w_20"],
+		"price":"999.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/db4895e45ee6f3339037dbf7200e63f2.png?x-oss-process=image/resize,w_216/format,webp",
+			"https://resource.smartisan.com/resource/190a2b0f96274c85973e1dd6ba3b511b.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"地平线 8 号旅行箱",
+		"info":"为了野心和远方",
+		"color":["https://resource.smartisan.com/resource/e473b47b676d5e88b830994777bbd162.jpg?x-oss-process=image/resize,w_20",
+				"https://resource.smartisan.com/resource/dddd334ee9e667503425b40cc9c0320b.jpg?x-oss-process=image/resize,w_20"],
+		"price":"299.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/da6640a58eb86fe2d5295e17b245ec01.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"畅呼吸智能落地式加湿器",
+		"info":"健康无雾、高效加湿、超低噪音",
+		"color":["https://resource.smartisan.com/resource/e647e77234f9ed0fde9dd4084d35ff57.jpg?x-oss-process=image/resize,w_20"],
+		"price":"1,999.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/1fe65e495dd3d5de92b95e6797452658.png?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"畅呼吸桌面式加湿器",
+		"info":"自然蒸发、无雾更健康",
+		"color":["https://resource.smartisan.com/resource/e647e77234f9ed0fde9dd4084d35ff57.jpg?x-oss-process=image/resize,w_20"],
+		"price":"999.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/cc9967811508ec86638ccebe7b446460.jpg?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"坚果蓝牙遥控器",
+		"info":"简单操作，实现精准控制",
+		"color":["https://resource.smartisan.com/resource/74ecab0bcefd2e1ad858df44ecf42876.jpg?x-oss-process=image/resize,w_20"],
+		"price":"79.00"
+	},{
+		"img":["https://resource.smartisan.com/resource/f55641e23f35f6dd82226b6c4a043f00.jpg?x-oss-process=image/resize,w_216/format,webp"],
+		"name":"坚果三脚架自拍杆",
+		"info":"两种模式，随时随地都能拍得开心",
+		"color":["https://resource.smartisan.com/resource/5b4da8bcedbb8e18a0ad60e982013a81.jpg?x-oss-process=image/resize,w_20"],
+		"price":"99.00"
+	}]
+}]

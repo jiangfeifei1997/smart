@@ -1,0 +1,109 @@
+[{"title":"首页",
+	"child":[{"title":"手机",
+				"child":[{
+					"id":0,"img":"https://resource.smartisan.com/resource/b07b9765e272f866da6acda4ee107d88.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"坚果 U 系列"},
+					{"id":1,"img":"https://resource.smartisan.com/resource/2077bb9819a652c36da473f379fe510b.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"坚果 R 系列"}]},
+			{"title":"官方配件",
+				"child":[{
+					"id":2,"img":"https://resource.smartisan.com/resource/3a7522290397a9444d7355298248f197.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"保护膜"},
+					{"id":3,"img":"https://resource.smartisan.com/resource/9f4be2ba6df58ad8c3017d3811d31de5.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"保护套"},{
+					"id":4,"img":"https://resource.smartisan.com/resource/90be7779c2454407ee5f4b6184c929ed.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"耳机"},
+					{"id":5,"img":"https://resource.smartisan.com/resource/6e96ccea3bd56bdd2243eb20330cec30.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"音箱"},{
+					"id":6,"img":"https://resource.smartisan.com/resource/82aab62886740f165a3631ce6cffe895.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"数据线"},
+					{"id":7,"img":"https://resource.smartisan.com/resource/dc53bd870ee64d2053ecc51750ece43a.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"充电器"},{
+					"id":8,"img":"https://resource.smartisan.com/resource/b9e61c6d93464454fa2e382632e34cee.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"自拍杆"},
+					{"id":9,"img":"https://resource.smartisan.com/resource/afcec520933673b8e03a867e6502f6e0.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"移动电源"}]},
+			{"title":"畅呼吸系列",
+				"child":[{
+					"id":10,"img":"https://resource.smartisan.com/resource/71432ad30288fb860a4389881069b874.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"生活电器"},
+					{"id":11,"img":"https://resource.smartisan.com/resource/4d83d72c5ecc288e8d5ddd9d06b80f99.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"配件"}]},
+			{"title":"服饰箱包",
+				"child":[{
+					"id":12,"img":"https://resource.smartisan.com/resource/448a7daa2ea1fbf3cdb4bafe0c557dfa.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"服饰"},
+					{"id":13,"img":"https://resource.smartisan.com/resource/1db1a8bfee3623fded41c9115b5a5335.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"鞋"}]}]
+},{
+
+},{
+
+},{"title":"官方配件",
+	"child":[{"title":"保护套",
+				"child":[{
+					"id":24,"img":"https://resource.smartisan.com/resource/b07b9765e272f866da6acda4ee107d88.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"坚果Pro系列保护套"},
+					{"id":25,"img":"https://resource.smartisan.com/resource/2077bb9819a652c36da473f379fe510b.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"坚果系列保护套"}]},
+			{"title":"保护膜",
+				"child":[{
+					"id":26,"img":"https://resource.smartisan.com/resource/3a7522290397a9444d7355298248f197.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"坚果Pro系列保护膜"},
+					{"id":27,"img":"https://resource.smartisan.com/resource/9f4be2ba6df58ad8c3017d3811d31de5.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"坚果系列保护膜"}]},
+			{"title":"耳机",
+				"child":[{
+					"id":28,"img":"https://resource.smartisan.com/resource/71432ad30288fb860a4389881069b874.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"线控耳机"},
+					{"id":29,"img":"https://resource.smartisan.com/resource/4d83d72c5ecc288e8d5ddd9d06b80f99.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"蓝牙耳机"}]},
+			{"title":"数据线",
+				"child":[{
+					"id":30,"img":"https://resource.smartisan.com/resource/448a7daa2ea1fbf3cdb4bafe0c557dfa.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"原装数据线"}]},
+			{"title":"充电器",
+				"child":[{
+					"id":31,"img":"https://resource.smartisan.com/resource/448a7daa2ea1fbf3cdb4bafe0c557dfa.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"充电器"}]},
+			{"title":"自拍杆",
+				"child":[{
+					"id":32,"img":"https://resource.smartisan.com/resource/448a7daa2ea1fbf3cdb4bafe0c557dfa.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"自拍杆"}]}
+			]
+
+},{
+
+},{
+
+},{"title":"品牌周边",
+	"child":[{"title":"服饰",
+				"child":[{
+					"id":44,"img":"https://resource.smartisan.com/resource/b07b9765e272f866da6acda4ee107d88.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"T恤"},
+					{"id":45,"img":"https://resource.smartisan.com/resource/2077bb9819a652c36da473f379fe510b.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"卫衣"},
+					{"id":46,"img":"https://resource.smartisan.com/resource/b07b9765e272f866da6acda4ee107d88.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"衬衫"},
+					{"id":47,"img":"https://resource.smartisan.com/resource/2077bb9819a652c36da473f379fe510b.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"Polo衫"}
+				]},
+			{"title":"鞋",
+				"child":[{
+					"id":48,"img":"https://resource.smartisan.com/resource/3a7522290397a9444d7355298248f197.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"帆布鞋"}]},
+			{"title":"文具",
+				"child":[{
+					"id":49,"img":"https://resource.smartisan.com/resource/71432ad30288fb860a4389881069b874.png?x-oss-process=image/resize,w_40/format,webp",
+					"info":"笔记本"}]},
+			{"title":"家具",
+				"child":[{
+					"id":50,"img":"https://resource.smartisan.com/resource/448a7daa2ea1fbf3cdb4bafe0c557dfa.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"时钟"},
+					{
+					"id":51,"img":"https://resource.smartisan.com/resource/448a7daa2ea1fbf3cdb4bafe0c557dfa.jpg?x-oss-process=image/resize,w_40/format,webp",
+					"info":"口腔护理"	
+					}]}
+			]
+
+}]

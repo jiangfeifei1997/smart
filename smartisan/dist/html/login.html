@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录 - 锤子科技</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<script src="../js/jquery-1.10.1.min.js"></script>
+	<script src = '../js/jquery.cookie.js'></script>
+	<script src="../js/ajax.js"></script>
+	<script src="../js/login.js"></script>
+</head>
+<body class="v2 login-v2">
+	<div class="wrapper ng-scope">
+		<div class="dialog dialog-shadow" style="display: block;margin-top: -324px;">
+			<div class="title" >
+				<div ng-show="is1111" class="return-btn ng-hide" ng-click="backToLast()">
+				</div>
+				<h4 ng-bind="dialogTitle" class="ng-binding">使用 Smartisan ID 登录官网</h4>
+				<a class="close"></a>
+			</div>
+			<div class="content ng-scope ng-animate" ng-view="" ng-animate-children="" style="height: auto;">
+				<div class="login-form form-v2 ng-scope ng-pristine ng-invalid ng-invalid-required" name="form" novalidate="" autocomplete="off">
+					<ul class="common-form">
+						<li class="username border-1p">
+							<div class="input" i-animation="errAnimation.username" style="opacity: 0.618;">
+								<span class="icon"><i>手机号/邮箱</i></span> <!-- ngIf: showCcc -->
+								<label for="username" class="placeholder ng-binding" ">手机号/邮箱</label> 
+								<input type="text" name="username"  autocomplete="username"  required=""   class="ng-pristine ng-invalid ng-invalid-required ng-valid-name-valid"> 
+								<span id="u-required"  class="warning ng-binding" >请输入手机号/邮箱</span> 
+								<span id="u-format-error"class="warning ng-binding" >手机号/邮箱格式错误</span> 
+								<span id="u-not-exist" class="warning ng-binding" >手机号/邮箱不存在</span>
+							</div>
+						</li>
+						<li class="password">
+							<div class="input">
+								<span class="icon"><i>密码</i></span>
+								<label for="password" class="placeholder">密码</label> 
+								<input type="password" name="password"  autocomplete="current-password"  required=""  class="ng-pristine ng-invalid ng-invalid-required ng-valid-password-valid"> 
+								<span class="m-eye"></span> 
+								<span id="p-required"  class="warning" >请输入密码</span>
+								 <span id="p-error"class="warning" >密码错误</span>
+							 </div>
+						</li>
+						 <li class="remember" >
+							 <div class="auto ng-binding ng-scope" >
+							 <span role="checkbox"  class="checkbox checked" ">
+								 <a></a>
+							 </span> 自动登录</div>
+							 <a class="forgotpassword ng-binding">忘记密码？</a> 
+							 <a class="registercloud ng-binding" >注册 Smartisan ID</a>
+						 </li>
+					 </ul>
+					 <div class="btn-wrapper">
+						 <div class="btn btn-primary disabled" ><a role="button">登录</a>
+						 </div>
+					 </div>
+					 <div class="info-wrapper clearfix">
+						 <ul>
+						 <li>
+							 <ul class="login-three ng-scope">
+								 <li class="text">其他账号登录：</li>
+								 <li role="button" class="wechat" ></li>
+								 <li role="button" class="weibo" ></li>
+								 <li role="button" class="qq" ></li>
+								 <li role="button" class="alipay"></li>
+							 </ul>
+						 </li>
+						 <li>
+						 	<a role="button" ng-click="switchModel()" class="ng-binding">国际手机号登录 <span class="smartisan-icon gt"></span></a>
+						 </li>
+						 </ul>
+					 </div>
+					 <div class="info-wrapper ng-hide">
+					 <span>提示：为了确保账户的安全性，维护您的福袋兑换权益，请输入您的用户名和密码，点击【登录】即可兑换福袋。</span>
+					 </div>
+				 </div><!-- ngIf: showCcc -->
+			 </div>
+		 </div>
+		
+
+		<div class=" copyright">
+		<div class="clearfix">
+			<h2>Copyright © <span copyright-year="">2017</span>, Smartisan Digital Co., Ltd. All Rights Reserved.</h2>
+			<h3 class="company">北京锤子数码科技有限公司</h3>
+			<ul class="privacy">
+				<li><a href="http://www.smartisan.com/support/#/agreement">法律声明</a></li>
+				<li><a href="http://www.smartisan.com/support/#/privacy">隐私条款</a></li>
+			</ul>
+		</div>
+		<h4>
+			<a href="http://www.miibeian.gov.cn/" target="_blank">
+				<span>京ICP备14041720号-1</span>
+				<span>京ICP证140622号</span>
+				<span>京公网安备11010502025474</span>
+			</a>
+		</h4>
+	</div>
+	</div>
+
+
+
+
+
+
+
+	
+</body>
+</html>
